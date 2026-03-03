@@ -1,77 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixel Pusher 3000 - Desktop Publishing like it's 1985</title>
-  <meta name="description" content="Create cards, signs, banners, and calendars with 400+ classic clipart sprites. Authentic DOS Print Shop style graphics.">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pixel Pusher 3000 - Desktop Publishing like it's 1985</title>
+        <meta
+            name="description"
+            content="Create cards, signs, banners, and calendars with 400+ classic clipart sprites. Authentic DOS Print Shop style graphics."
+        />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://pixel-pusher.app/">
-  <meta property="og:title" content="Pixel Pusher 3000 - Desktop Publishing like it's 1985">
-  <meta property="og:description" content="Create cards, signs, banners, and calendars with 400+ classic clipart sprites. Authentic DOS Print Shop style graphics.">
-  <meta property="og:image" content="https://pixel-pusher.app/assets/social-card.png">
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://pixel-pusher.app/" />
+        <meta
+            property="og:title"
+            content="Pixel Pusher 3000 - Desktop Publishing like it's 1985"
+        />
+        <meta
+            property="og:description"
+            content="Create cards, signs, banners, and calendars with 400+ classic clipart sprites. Authentic DOS Print Shop style graphics."
+        />
+        <meta
+            property="og:image"
+            content="https://pixel-pusher.app/assets/social-card.png"
+        />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Pixel Pusher 3000 - Desktop Publishing like it's 1985">
-  <meta name="twitter:description" content="Create cards, signs, banners, and calendars with 400+ classic clipart sprites.">
-  <meta name="twitter:image" content="https://pixel-pusher.app/assets/social-card.png">
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Pixel Pusher 3000 - Desktop Publishing like it's 1985"
+        />
+        <meta
+            name="twitter:description"
+            content="Create cards, signs, banners, and calendars with 400+ classic clipart sprites."
+        />
+        <meta
+            name="twitter:image"
+            content="https://pixel-pusher.app/assets/social-card.png"
+        />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <script src="https://tinylytics.app/embed/ywurYH7BsQHkVLmtPSeX.js" defer></script>
-</head>
-<body>
-  <!-- Dot matrix paper edges -->
-  <div class="paper-edge paper-edge-left"></div>
-  <div class="paper-edge paper-edge-right"></div>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" type="image/png" href="assets/favicon.png" />
+        <script
+            src="https://tinylytics.app/embed/ywurYH7BsQHkVLmtPSeX.js"
+            defer
+        ></script>
+    </head>
+    <body>
+        <!-- Dot matrix paper edges -->
+        <div class="paper-edge paper-edge-left"></div>
+        <div class="paper-edge paper-edge-right"></div>
 
-  <!-- Scanline overlay -->
-  <div class="scanlines"></div>
+        <!-- Scanline overlay -->
+        <div class="scanlines"></div>
 
-  <main>
-    <!-- Hero Section with orbiting sprites -->
-    <section class="hero-with-sprites">
-      <!-- Sprite Carousel - behind the hero content -->
-      <div class="carousel-container">
-        <div class="carousel" id="carousel">
-          <!-- Sprites loaded by JS -->
-        </div>
-      </div>
+        <main>
+            <!-- Hero Section with orbiting sprites -->
+            <section class="hero-with-sprites">
+                <!-- Sprite Carousel - behind the hero content -->
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel">
+                        <!-- Sprites loaded by JS -->
+                    </div>
+                </div>
 
-      <!-- Hero content - on top of sprites -->
-      <header class="hero">
-        <div class="logo-container">
-          <img src="assets/splash.png" alt="Pixel Pusher 3000" class="logo">
-          <div class="logo-shine"></div>
-        </div>
-        <p class="tagline">Desktop Publishing like it's 1985</p>
-        <p class="subtitle">Create cards, signs, banners, & calendars with 400+ classic clipart sprites</p>
+                <!-- Hero content - on top of sprites -->
+                <header class="hero">
+                    <div class="logo-container">
+                        <img
+                            src="assets/splash.png"
+                            alt="Pixel Pusher 3000"
+                            class="logo"
+                        />
+                        <div class="logo-shine"></div>
+                    </div>
+                    <p class="tagline">Desktop Publishing like it's 1985</p>
+                    <p class="subtitle">
+                        Create cards, signs, banners, & calendars with 400+
+                        classic clipart sprites
+                    </p>
 
-        <div class="notify-form-container">
-          <p class="notify-label">GET NOTIFIED WHEN WE LAUNCH</p>
-          <form id="notify-form" class="notify-form">
-            <input type="email" name="email" placeholder="YOUR EMAIL" required autocomplete="email">
-            <button type="submit">NOTIFY ME</button>
-          </form>
-          <p id="notify-message" class="notify-message" hidden></p>
-        </div>
+                    <div class="notify-form-container">
+                        <p class="notify-label">GET NOTIFIED WHEN WE LAUNCH</p>
+                        <form id="notify-form" class="notify-form">
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="YOUR EMAIL"
+                                required
+                                autocomplete="email"
+                            />
+                            <button type="submit">NOTIFY ME</button>
+                        </form>
+                        <p
+                            id="notify-message"
+                            class="notify-message"
+                            hidden
+                        ></p>
+                    </div>
 
-        <p class="platform-note">Coming soon to macOS</p>
-      </header>
-    </section>
+                    <p class="platform-note">Coming soon to macOS</p>
+                </header>
+            </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p>Made with nostalgia</p>
-    </footer>
-  </main>
+            <!-- Footer -->
+            <footer class="footer">
+                <p>Made with nostalgia</p>
+            </footer>
+        </main>
 
-  <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
